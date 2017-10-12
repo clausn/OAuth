@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace OAuth.Controllers
 {
+    [RequireHttps] //all requests have to use https
     public class HomeController : Controller
     {
         public ActionResult Index()
